@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Burger</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido - Lanchonete</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      margin-top: 5px;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .checkbox-group, .radio-group {
+      margin-top: 5px;
+    }
+    .checkbox-group label, .radio-group label {
+      font-weight: normal;
+      display: block;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Formulário de Pedido</h2>
+  <form>
+    <!-- Dados do cliente -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <!-- Escolha do lanche -->
+    <label>Lanche:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="lanche" value="X-Salada" required> X-Salada</label>
+      <label><input type="radio" name="lanche" value="X-Bacon"> X-Bacon</label>
+      <label><input type="radio" name="lanche" value="X-Frango"> X-Frango</label>
+    </div>
+
+    <!-- Adicionais -->
+    <label>Adicionais:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="adicional" value="Batata frita"> Batata frita</label>
+      <label><input type="checkbox" name="adicional" value="Nuggets"> Nuggets</label>
+      <label><input type="checkbox" name="adicional" value="Onion Rings"> Onion Rings</label>
+    </div>
+
+    <!-- Bebida -->
+    <label for="bebida">Bebida:</label>
+    <select id="bebida" name="bebida" required>
+      <option value="">Selecione...</option>
+      <option value="Refrigerante">Refrigerante</option>
+      <option value="Suco">Suco</option>
+      <option value="Água">Água</option>
+      <option value="Milkshake">Milkshake</option>
+    </select>
+
+    <!-- Observações -->
+    <label for="obs">Observações:</label>
+    <textarea id="obs" name="obs" rows="4" placeholder="Ex.: sem cebola, bem passado..."></textarea>
+
+    <!-- Botão -->
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
+    
+</body>
+</html>
