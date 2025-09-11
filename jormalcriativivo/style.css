@@ -1,0 +1,19 @@
+p{
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20x;
+    text-decoration: dashed;
+}
+img {
+    width: 100px;
+    height: 10px;
+    border-radius: 20px;  
+}
+a{
+    text-decoration: nome;
+    color: cornflowerblue;
+}
+h1 {
+    color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
