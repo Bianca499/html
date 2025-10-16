@@ -1,0 +1,136 @@
+
+   Estilo Global
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+
+
+   Menu Principal
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin: 0 auto 50px auto;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu a:hover {
+  background-color: #21867a;
+  transform: translateY(-3px);
+}
+
+
+   Tabuleiro de Cores
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+/* cores dos quadrados */
+.q1 { background-color: red; }
+.q2 { background-color: orange; }
+.q3 { background-color: yellow; }
+.q4 { background-color: green; }
+.q5 { background-color: blue; }
+.q6 { background-color: indigo; }
+.q7 { background-color: violet; }
+.q8 { background-color: pink; }
+.q9 { background-color: brown; }
+.q10 { background-color: gray; }
+.q11 { background-color: cyan; }
+.q12 { background-color: lime; }
+
+
+   Galeria de Fotos
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+
+   Página de Produtos
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.produto {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.produto h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.produto p {
+  font-weight: bold;
+  color: #2a9d8f;
+}
