@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* ---------- PARTE 1: TESTANDO FILTROS ---------- */
+.filtros img {
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.invert { filter: invert(100%); }
+.blur { filter: blur(4px); }
+.brightness { filter: brightness(150%); }
+.contrast { filter: contrast(200%); }
+
+/* ---------- PARTE 2: EFEITO AO PASSAR O MOUSE ---------- */
+.efeito-hover img {
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.efeito-hover img:hover {
+    filter: saturate(150%) brightness(120%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ---------- PARTE 3: GALERIA DE FILTROS ---------- */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: grayscale(100%) blur(3px);
+}
+
+.galeria img:hover {
+    filter: none;
+    transform: scale(1.05);
+}
