@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background: #004aad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Seção Principal */
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background-color: #f5f7fa;
+}
+
+.texto {
+    max-width: 50%;
+}
+
+.texto h1 {
+    font-size: 2.5em;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+button {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #007bff;
+    transform: scale(1.1);
+}
+
+.imagem img {
+    width: 400px;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.imagem img:hover {
+    transform: scale(1.1);
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 80px;
+    background-color: #e9eef5;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #004aad;
+    margin: 15px 0;
+    transition: color 0.3s;
+}
+
+.card p {
+    color: #555;
+    padding: 0 20px 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover h3 {
+    color: #ff8800;
+}
+
+/* Rodapé */
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
