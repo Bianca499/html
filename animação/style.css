@@ -1,0 +1,119 @@
+/* Exercício 1 – Quadrado em movimento*/
+.quadrado-movimento {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: mover 4s infinite;
+}
+@keyframes mover {
+  0% { left: 0; background-color: red; }
+  50% { left: 300px; background-color: blue; }
+  100% { left: 0; background-color: red; }
+}
+/* Exercício 2 – Mudança de cor*/
+.quadrado-cor {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 20px auto;
+  animation: cores 6s infinite;
+}
+@keyframes cores {
+  0% { background-color: red; }
+  33% { background-color: green; }
+  66% { background-color: blue; }
+  100% { background-color: red; }
+}
+/*Exercício 3 – Botão com animação*/
+.botao-animado {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: botaoEfeito 5s infinite;
+}
+@keyframes botaoEfeito {
+  0% {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #2ecc71;
+    color: black;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1);
+  }
+}
+/*Exercício 4 – Texto Piscando*/
+.texto-piscando {
+  font-size: 30px;
+  animation: piscar 2s infinite;
+}
+@keyframes piscar {
+  0% { color: red; }
+  33% { color: yellow; }
+  66% { color: blue; }
+  100% { color: red; }
+}
+/*Exercício 5 – Sol nascendo*/
+.ceu {
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  background: linear-gradient(#87ceeb, #fff);
+  position: relative;
+  overflow: hidden;
+}
+.sol {
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -80px;
+  left: 160px;
+  animation: nascer 5s infinite;
+}
+@keyframes nascer {
+  0% { bottom: -80px; background: orange; }
+  50% { bottom: 80px; background: yellow; }
+  100% { bottom: -80px; background: orange; }
+}
+/*Exercício 6 – Coração Batendo*/
+.coracao {
+  width: 100px;
+  animation: batimento 1s infinite;
+}
+
+@keyframes batimento {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+/*Exercício 7 – Texto flutuante*/
+.texto-flutuante {
+  font-size: 28px;
+  animation: flutuar 4s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
+
+
