@@ -1,0 +1,161 @@
+body {
+   font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #f4f4f4;
+}
+h2 {
+    margin-bottom: 10px;
+}
+/* ===== Exercício 1 - Botões com Hover ===== */
+.botoes-hover button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn1 { background-color: #ff5733; }
+.btn1:hover { background-color: #ff784e; }
+
+.btn2 { background-color: #28a745; }
+.btn2:hover { background-color: #45c163; }
+
+.btn3 { background-color: #007bff; }
+.btn3:hover { background-color: #3399ff; }
+
+/* ===== Exercício 2 - Clique com Active ===== */
+.botao-active button {
+    padding: 15px 30px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+botao-active button:active {
+    transform: scale(0.9);
+}
+/* ===== Exercício 3 - Input com Foco ===== */
+.inputs-foco input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.inputs-foco input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+    outline: none;
+}
+/* ===== Exercício 4 - Card com Hover ===== */
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}  
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #f0f8ff;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* ===== Exercício 5 - Imagem com Filtro ===== */
+.galeria {
+    display: flex;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.galeria img:hover {
+    filter: grayscale(100%);
+}
+/* ===== Exercício 6 - Botão “pressionado” ===== */
+.botao-estados button {
+    padding: 12px 25px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.botao-estados button:hover {
+    background-color: lightblue;
+}
+
+.botao-estados button:active {
+    background-color: #004c99;
+    transform: scale(0.95);
+}
+
+.botao-estados button:focus {
+    outline: 2px solid blue;
+}
+/* ===== Exercício 7 - Formulário completo ===== */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+.formulario input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+    outline: none;
+}
+
+.formulario button {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: lightblue;
+}
+
+.formulario button:active {
+    background-color: #004c99;
+    transform: scale(0.95);
+}
+
