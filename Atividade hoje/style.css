@@ -1,0 +1,137 @@
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn1 { background-color: red; }
+.btn2 { background-color: green; }
+.btn3 { background-color: purple; }
+
+.btn1:hover { background-color: darkred; }
+.btn2:hover { background-color: darkgreen; }
+.btn3:hover { background-color: indigo; }
+
+
+/* EXERCÍCIO 2 */
+.btn-click {
+    padding: 15px 30px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-click:active {
+    transform: scale(0.9);
+}
+/* EXERCÍCIO 3 */
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px dodgerblue;
+    outline: none;
+}
+/* EXERCÍCIO 4 */
+.card {
+    width: 250px;
+    padding: 15px;
+    background: #f9f9f9;
+    text-align: center;
+    transition: all 0.4s;
+    box-shadow: 0 0 5px transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #f1f1f1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+}
+/*EXERCICO 5*/
+.galeria img {
+    width: 30%;
+    margin: 1%;
+    transition: filter 0.4s;
+}
+
+.galeria img:hover {
+    filter: grayscale(100%);
+}
+/*EXERCICIO 6*/
+.btn-estados {
+    padding: 15px 30px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-estados:hover {
+    background-color: lightblue;
+}
+
+.btn-estados:active {
+    background-color: darkblue;
+    transform: scale(0.9);
+    color: white;
+}
+
+.btn-estados:focus {
+    border: 3px solid black;
+    outline: none;
+}
+/*EXERCICIO 7*/
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+form input:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px blue;
+    outline: none;
+}
+
+form button {
+    background-color: darkgray;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: lightgray;
+}
+
+form button:active {
+    transform: scale(0.9);
+    background-color: gray;
+}
+
+
+
+
+
