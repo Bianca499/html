@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 70px 20px 20px; /* espaço para o título fixo */
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* TÍTULO FIXO */
+.fixed-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #4a90e2;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 22px;
+}
+
+/* Container para organizar o conteúdo */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CAIXA RELATIVE */
+.relative-box {
+    position: relative;
+    left: 15px;
+    top: 10px;
+    background: #ffd280;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* CAIXA STICKY */
+.sticky-box {
+    position: sticky;
+    top: 70px; /* abaixo do título fixo */
+    background: #82c91e;
+    color: #ffffff;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    font-weight: bold;
+}
+
+/* TEXTO LONGO */
+.content {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.content p {
+    margin-bottom: 18px;
+}
+
+/* CAIXA ABSOLUTE */
+.absolute-box {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #ff5c8a;
+    color: white;
+    padding: 15px 20px;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    font-weight: bold;
+}
