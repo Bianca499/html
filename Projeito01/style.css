@@ -1,0 +1,518 @@
+/* GERAIS E RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d1117; /* Fundo escuro */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #161b22; /* Um tom mais claro que o corpo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4CAF50; /* Cor de destaque */
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-link {
+    font-size: 1em;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 10px;
+    position: relative;
+    /* EFEITO DE TRANSITION NO HOVER DO LINK */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+    color: #4CAF50; /* Muda a cor */
+    transform: translateY(-2px); /* Levanta um pouco */
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEÇÃO PRINCIPAL */
+.secao-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 80px 50px;
+    min-height: 80vh;
+}
+
+.conteudo-principal {
+    max-width: 600px;
+}
+
+.titulo-principal {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.paragrafo-destaque {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO COM EFEITO */
+.btn-explorar {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #161b22;
+    font-weight: 700;
+    border-radius: 8px;
+    /* EFEITO DE TRANSITION DE COR E TAMANHO */
+    transition: background-color 0.4s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-explorar:hover {
+    background-color: #66bb6a; /* Efeito de cor */
+    transform: scale(1.05) translateY(-3px); /* Efeito de tamanho e elevação */
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
+
+/* IMAGEM COM EFEITO DE ZOOM */
+.imagem-destaque-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden; /* Garante que o zoom não vaze */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* EFEITO DE ZOOM AO PASSAR O MOUSE */
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Transição suave e elegante */
+}
+
+.imagem-destaque-container:hover .imagem-destaque {
+    transform: scale(1.1); /* Zoom in */
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEÇÃO DE CARDS */
+.secao-cards {
+    padding: 80px 50px;
+    background-color: #0d1117;
+    text-align: center;
+}
+
+.titulo-cards {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Usando Flexbox para os cards */
+}
+
+.card {
+    padding: 30px;
+    background-color: #161b22;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    
+    /* EFEITOS DE TRANSITION GERAIS */
+    transition: all 0.4s ease-in-out; 
+    
+    /* Sombra e Cor inicial */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* AO PASSAR O MOUSE NO CARD */
+.card:hover {
+    /* TRANSITION DE COR E SOMBRA */
+    background-color: #1f2731; /* Cor de fundo mais clara/destacada */
+    border-color: #4CAF50; /* Borda de destaque */
+    box-shadow: 0 12px 30px rgba(76, 175, 80, 0.2); /* Sombra mais forte */
+    
+    /* DIV CRESCE */
+    transform: translateY(-10px) scale(1.05);
+}
+
+.card-titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    /* TRANSITION DE COR DO TÍTULO */
+    transition: color 0.4s ease-in-out;
+}
+
+/* TÍTULO MUDA DE COR AO PASSAR O MOUSE NO CARD */
+.card:hover .card-titulo {
+    color: #4CAF50; 
+}
+
+.card-texto {
+    font-size: 1em;
+    color: #b0b0b0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #161b22;
+    border-top: 1px solid #2f343a;
+}
+
+.rodape-nome-site {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.menu-rodape {
+    display: flex;
+    gap: 20px;
+}
+
+/* O menu-link no footer já utiliza a mesma classe e transição do cabeçalho */
+/* EFEITO DE TRANSITION NO HOVER DO LINK (reutilizando .menu-link) */
+
+/* -------------------------------------------------------------------------- */
+/* MEDIA QUERY PARA RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .secao-principal {
+        grid-template-columns: 1fr; /* Coloca um item embaixo do outro */
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .conteudo-principal {
+        max-width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+    
+    .imagem-destaque-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-cards {
+        flex-direction: column; /* Coloca os cards um embaixo do outro */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .cabecalho, .rodape {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu, .menu-rodape {
+        gap: 15px;
+    }
+    /* GERAIS E RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d1117; /* Fundo escuro */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #161b22; /* Um tom mais claro que o corpo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4CAF50; /* Cor de destaque */
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-link {
+    font-size: 1em;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 10px;
+    position: relative;
+    /* EFEITO DE TRANSITION NO HOVER DO LINK */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+    color: #4CAF50; /* Muda a cor */
+    transform: translateY(-2px); /* Levanta um pouco */
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEÇÃO PRINCIPAL */
+.secao-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 80px 50px;
+    min-height: 80vh;
+}
+
+.conteudo-principal {
+    max-width: 600px;
+}
+
+.titulo-principal {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.paragrafo-destaque {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO COM EFEITO */
+.btn-explorar {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #161b22;
+    font-weight: 700;
+    border-radius: 8px;
+    /* EFEITO DE TRANSITION DE COR E TAMANHO */
+    transition: background-color 0.4s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-explorar:hover {
+    background-color: #66bb6a; /* Efeito de cor */
+    transform: scale(1.05) translateY(-3px); /* Efeito de tamanho e elevação */
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
+
+/* IMAGEM COM EFEITO DE ZOOM */
+.imagem-destaque-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden; /* Garante que o zoom não vaze */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* EFEITO DE ZOOM AO PASSAR O MOUSE */
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Transição suave e elegante */
+}
+
+.imagem-destaque-container:hover .imagem-destaque {
+    transform: scale(1.1); /* Zoom in */
+}
+
+/* -------------------------------------------------------------------------- */
+/* SEÇÃO DE CARDS */
+.secao-cards {
+    padding: 80px 50px;
+    background-color: #0d1117;
+    text-align: center;
+}
+
+.titulo-cards {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Usando Flexbox para os cards */
+}
+
+.card {
+    padding: 30px;
+    background-color: #161b22;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    
+    /* EFEITOS DE TRANSITION GERAIS */
+    transition: all 0.4s ease-in-out; 
+    
+    /* Sombra e Cor inicial */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* AO PASSAR O MOUSE NO CARD */
+.card:hover {
+    /* TRANSITION DE COR E SOMBRA */
+    background-color: #1f2731; /* Cor de fundo mais clara/destacada */
+    border-color: #4CAF50; /* Borda de destaque */
+    box-shadow: 0 12px 30px rgba(76, 175, 80, 0.2); /* Sombra mais forte */
+    
+    /* DIV CRESCE */
+    transform: translateY(-10px) scale(1.05);
+}
+
+.card-titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    /* TRANSITION DE COR DO TÍTULO */
+    transition: color 0.4s ease-in-out;
+}
+
+/* TÍTULO MUDA DE COR AO PASSAR O MOUSE NO CARD */
+.card:hover .card-titulo {
+    color: #4CAF50; 
+}
+
+.card-texto {
+    font-size: 1em;
+    color: #b0b0b0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #161b22;
+    border-top: 1px solid #2f343a;
+}
+
+.rodape-nome-site {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.menu-rodape {
+    display: flex;
+    gap: 20px;
+}
+
+/* O menu-link no footer já utiliza a mesma classe e transição do cabeçalho */
+/* EFEITO DE TRANSITION NO HOVER DO LINK (reutilizando .menu-link) */
+
+/* -------------------------------------------------------------------------- */
+/* MEDIA QUERY PARA RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .secao-principal {
+        grid-template-columns: 1fr; /* Coloca um item embaixo do outro */
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .conteudo-principal {
+        max-width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+    
+    .imagem-destaque-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-cards {
+        flex-direction: column; /* Coloca os cards um embaixo do outro */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .cabecalho, .rodape {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu, .menu-rodape {
+        gap: 15px;
+    }
+}
+}
