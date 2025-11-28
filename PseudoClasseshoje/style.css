@@ -1,0 +1,248 @@
+/* --- Estilos Gerais para Organização --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff20;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.exercicio-secao {
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------- */
+/* --- Exercício 1: Mudando Cores com Hover --- */
+/* ------------------------------------------- */
+
+.ex1-botoes button {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    /* A chave para o efeito suave é o 'transition' */
+    /* Aplica a transição em todas as propriedades que mudam, durante 0.3 segundos, com suavidade (ease) */
+    transition: all 0.3s ease; 
+}
+
+/* Estilos Iniciais */
+.botao-1 { background-color: #f44336; } /* Vermelho */
+.botao-2 { background-color: #4CAF50; } /* Verde */
+.botao-3 { background-color: #2196F3; } /* Azul */
+
+/* Estilos no :hover */
+.botao-1:hover { background-color: #ff9800; } /* Laranja */
+.botao-2:hover { background-color: #00bcd4; } /* Ciano */
+.botao-3:hover { background-color: #9c27b0; } /* Roxo */
+
+
+/* ---------------------------------------- */
+/* --- Exercício 2: Clique com :active --- */
+/* ---------------------------------------- */
+
+.botao-active {
+    padding: 15px 30px;
+    background-color: #ffc107; /* Amarelo */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px #e0a800; /* Sombra para parecer 3D */
+    /* Transiciona a transformação e a sombra */
+    transition: all 0.1s ease; 
+}
+
+.botao-active:active {
+    /* Diminui de tamanho (escala) */
+    transform: scale(0.95);
+    /* "Empurra" o botão para baixo, simulando o clique */
+    box-shadow: 0 2px #e0a800;
+    /* Move para compensar o desaparecimento da sombra */
+    transform: translateY(3px); 
+}
+
+
+/* -------------------------------------- */
+/* --- Exercício 3: Input com Foco --- */
+/* -------------------------------------- */
+
+.ex3-inputs input {
+    padding: 10px;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove o contorno padrão do navegador */
+    /* Transiciona a borda e a sombra */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-foco:focus {
+    /* Muda a cor da borda */
+    border-color: #007bff; 
+    /* Adiciona uma sombra */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+}
+
+
+/* -------------------------------------- */
+/* --- Exercício 4: Card com Hover --- */
+/* -------------------------------------- */
+
+.card-hover {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    /* Sombra inicial suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    /* Transiciona a transformação, a sombra e o background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-hover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-hover:hover {
+    /* Aumenta de tamanho (escala) */
+    transform: scale(1.05); 
+    /* Mostra uma sombra maior e mais nítida */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    /* Muda levemente a cor do fundo */
+    background-color: #e9f7ff; 
+}
+
+
+/* -------------------------------------- */
+/* --- Exercício 5: Imagem com Filtro --- */
+/* -------------------------------------- */
+
+.galeria-hover {
+    display: flex;
+    gap: 15px;
+}
+
+.img-filtro {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 5px;
+    /* Filtro inicial: nenhuma alteração */
+    filter: grayscale(0%); 
+    /* Transiciona o filtro */
+    transition: filter 0.5s ease;
+}
+
+.img-filtro:hover {
+    /* Fica em preto e branco */
+    filter: grayscale(100%); 
+}
+
+
+/* ---------------------------------------------------- */
+/* --- Exercício 6: Botão "pressionado" (Todos Estados) --- */
+/* ---------------------------------------------------- */
+
+.botao-estados {
+    padding: 12px 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #ccc; /* Normal: cinza */
+    cursor: pointer;
+    outline: none; 
+    /* Transiciona todas as propriedades importantes */
+    transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
+}
+
+/* Estado :hover: azul claro */
+.botao-estados:hover {
+    background-color: #80c4ff; 
+    color: white;
+    border-color: #80c4ff;
+}
+
+/* Estado :active: azul escuro e encolhe */
+.botao-estados:active {
+    background-color: #007bff; 
+    transform: scale(0.98); /* Encolhe levemente */
+}
+
+/* Estado :focus: mostra uma borda (outline) */
+.botao-estados:focus {
+    /* Usa outline para não interferir no tamanho do botão, mas o border-color do hover e active é mais impactante */
+    border-color: #ffc107; /* Borda amarela para foco */
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5); /* Adiciona um anel de foco visível */
+}
+
+/* -------------------------------------------------- */
+/* --- Exercício 7: Foco em Formulário Completo --- */
+/* -------------------------------------------------- */
+
+.formulario-completo {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-completo label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.form-input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    /* Transiciona a cor da borda */
+    transition: border-color 0.3s ease; 
+}
+
+/* Foco no campo: destaque a borda */
+.form-input:focus {
+    border-color: #28a745; /* Cor verde de destaque */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+.form-botao {
+    padding: 12px 20px;
+    background-color: #6c757d; /* Cor inicial cinza */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Transiciona background e transform */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* :hover do botão: muda a cor */
+.form-botao:hover {
+    background-color: #007bff; /* Azul */
+}
+
+/* :active do botão: encolhe */
+.form-botao:active {
+    background-color: #0056b3; 
+    transform: scale(0.97); /* Encolhe */
+}
+Espero que goste! Você pode copiar e colar o código HTML e CSS nos seus respectivos arquivos (index.html e style.css) e abrir o index.html no seu navegador para ver todos os efeitos em ação.
+
+Quer que eu te explique em mais detalhes o uso de alguma propriedade específica, como o transition ou o filter?
