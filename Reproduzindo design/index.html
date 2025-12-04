@@ -7,103 +7,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <!-- Fonte estilo country moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<div class="brand container">
-<div class="logo">B</div>
-<div style="display:flex;flex-direction:column;line-height:1">
-<strong style="font-size:14px">Sua Marca</strong>
-<small style="color:var(--color-muted);">Slogan ou descrição curta</small>
-</div>
-</div>
 
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">Ana Castela</h1>
 
-<nav style="margin-right:24px">
-<a href="#sobre">Sobre</a>
-<a href="#servicos">Serviços</a>
-<a href="#contato">Contato</a>
-<a class="cta" href="#">Fale conosco</a>
-</nav>
-</header>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#musicas">Músicas</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#contato" class="btn-outline">Contato</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
 
-<main class="container">
-<section class="hero">
-<div class="hero-left">
-<span class="tag">Novo — Coleção</span>
-<h1>Design elegante, <br>feito para conversões.</h1>
-<p class="lead">Este layout é uma reprodução do Figma — mantenha as cores do design para fidelidade visual. Texto de apoio que explica rapidamente a proposta.</p>
-<div class="buttons">
-<a class="cta" href="#">Comece agora</a>
-<a class="btn-secondary" href="#">Ver mais</a>
-</div>
+            <div class="hero-text">
+                <h2>A Boiadeira que conquistou o Brasil</h2>
+                <p>Com uma voz marcante e identidade única, Ana Castela representa a nova geração do agronejo.</p>
 
+                <div class="hero-buttons">
+                    <a href="#musicas" class="btn-primary">Ouça agora</a>
+                    <a href="#agenda" class="btn-secondary">Próximos shows</a>
+                </div>
+            </div>
 
-<div class="features">
-<div class="feature">
-<h3>Design fiel</h3>
-<p>Espaçamento, tipografia e paleta alinhados com o Figma.</p>
-</div>
-<div class="feature">
-<h3>Responsivo</h3>
-<p>Funciona bem em desktop, tablet e mobile.</p>
-</div>
-<div class="feature">
-<h3>Fácil de editar</h3>
-<p>Variáveis CSS para cores e escala de fontes.
-</p>
-</div>
-</div>
-</div>
+            <div class="hero-image">
+                <img src="ana-castela imagem dela.webp" alt="Foto de Ana Castela">
+            </div>
 
+        </div>
+    </section>
 
-<div class="hero-right">
-<div class="card sticky-box">
-<div style="width:48%;">
-<div class="model">
-<!-- Substitua o caminho pela foto da modelo do Figma -->
-<img src="modelo ana castela.jpg" alt="Ana Castela">
-</div>
-</div>
-<div class="info">
-<div class="meta">Coleção 2025 • Foto de Ana Castela</div>
-<h2 style="margin:8px 0 6px">Nome da Modelo</h2>
-<p style="margin:0;color:var(--color-muted)">Breve descrição ou chamada — uma linha sobre a campanha ou produto.</p>
-</div>
-</div>
+    <!-- MÚSICAS -->
+    <section id="musicas" class="musicas container">
+        <h2>Músicas em Destaque</h2>
 
+        <div class="cards">
 
-</div>
-</section>
+            <div class="card">
+                <img src="Nosso quadro.jpg" alt="">
+                <h3>Nosso Quadro</h3>
+                <p>Um dos maiores sucessos da artista, marcando presença em todas as plataformas.</p>
+            </div>
 
+            <div class="card">
+                <img src="Solteiro_Forçado_-_Ana_Castela.png"">
+                <h3>Solteiro Forçado</h3>
+                <p>Hit que viralizou e se tornou favorito dos fãs do agronejo.</p>
+            </div>
 
-<section id="sobre" style="margin-top:60px">
-<h2>Sobre</h2>
-<p style="color:var(--color-muted)">Aqui você pode colocar um texto mais longo descrevendo o projeto, a inspiração e os pontos importantes do design. Repita parágrafos para criar rolagem e testar o layout.</p>
+            <div class="card">
+                <img src="musica boiadeira.jpg" alt="">
+                <h3>Boiadeira</h3>
+                <p>Música icônica que apresentou a personalidade forte da cantora.</p>
+            </div>
 
+        </div>
+    </section>
 
-<article style="margin-top:18 
-</p>Ana Castela, natural de Amambai, Mato Grosso do Sul, construiu sua carreira a partir de um vídeo viral gravado em uma fazenda paraguaia, onde vivia com a família. Antes da fama, a cantora trabalhou na fazenda, aprendeu a andar de cavalo e tinha o sonho de cursar medicina, mas acabou trancando a faculdade durante a pandemia para se dedicar à música. Seu primeiro sucesso, a música "Boiadeira", a consolidou no cenário musical. <p></p>
-<p>Ana Castela, natural de Amambai, Mato Grosso do Sul, construiu sua carreira a partir de um vídeo viral gravado em uma fazenda paraguaia, onde vivia com a família. Antes da fama, a cantora trabalhou na fazenda, aprendeu a andar de cavalo e tinha o sonho de cursar medicina, mas acabou trancando a faculdade durante a pandemia para se dedicar à música. Seu primeiro sucesso, a música "Boiadeira", a consolidou no cenário musical. </p>
-</article>
+    <!-- AGENDA -->
+    <section id="agenda" class="agenda container">
+        <h2>Agenda de Shows</h2>
 
+        <ul class="agenda-list">
+            <li><strong>10/12</strong> — Goiânia (GO)</li>
+            <li><strong>17/12</strong> — Campo Grande (MS)</li>
+            <li><strong>22/12</strong> — Londrina (PR)</li>
+            <li><strong>05/01</strong> — São Paulo (SP)</li>
+        </ul>
+    </section>
 
-</section>
+    <!-- FOOTER -->
+    <footer id="contato" class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Ana Castela</h3>
+                <p>Site fã inspirado na estética oficial da cantora.</p>
+            </div>
 
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">Spotify</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
 
-<footer>
-<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-<div>
-<strong>Ana castela</strong>
-<div style="color:var(--color-muted);font-size:14px">© 2025 — Todos os direitos reservados</div>
-</div>
-<div style="color:var(--color-muted)">Termos • Privacidade • Contato</div>
-</div>
-</footer>
-</main>
 </body>
 </html>
 </body>
 </html>
-   
