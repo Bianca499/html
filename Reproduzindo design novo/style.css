@@ -1,0 +1,157 @@
+/* VARIÁVEIS DE TEMA (cores country) */
+:root {
+    --green: #2F4F2F;     /* verde escuro country */
+    --gold: #D4AF37;      /* dourado */
+    --brown: #5A3E2B;     /* marrom madeira */
+    --cream: #F1E8D9;     /* bege suave */
+    --white: #FFFFFF;
+    --text: #1A1A1A;
+    --radius: 14px;
+    --shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* RESET */
+*{margin:0; padding:0; box-sizing:border-box}
+body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--cream);
+    color:var(--text);
+}
+a{text-decoration:none}
+
+/* CONTAINER */
+.container{
+    width:min(1100px, 92%);
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    background:var(--white);
+    box-shadow:var(--shadow);
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+.logo{
+    font-size:1.6rem;
+    color:var(--green);
+    font-weight:900;
+}
+.nav a{
+    margin-left:20px;
+    font-weight:600;
+    color:var(--green);
+}
+.btn-outline{
+    border:2px solid var(--green);
+    padding:8px 14px;
+    border-radius:var(--radius);
+}
+
+/* HERO */
+.hero{
+    padding:70px 0;
+}
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 400px;
+    gap:30px;
+    align-items:center;
+}
+.hero-text h2{
+    font-size:2.4rem;
+    color:var(--green);
+    margin-bottom:12px;
+}
+.hero-text p{
+    color:var(--brown);
+    margin-bottom:22px;
+}
+.hero-buttons a{
+    margin-right:12px;
+}
+.btn-primary{
+    background:var(--green);
+    color:white;
+    padding:12px 20px;
+    border-radius:var(--radius);
+    font-weight:700;
+}
+.btn-secondary{
+    background:var(--gold);
+    color:white;
+    padding:12px 20px;
+    border-radius:var(--radius);
+    font-weight:700;
+}
+.hero-image img{
+    width:100%;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+/* MÚSICAS */
+.musicas h2{
+    font-size:2rem;
+    color:var(--green);
+    margin:40px 0 22px 0;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+.card{
+    background:white;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card h3{margin:14px}
+.card p{margin:0 14px 16px 14px; color:var(--brown)}
+
+/* AGENDA */
+.agenda h2{
+    margin:50px 0 18px;
+    font-size:2rem;
+    color:var(--green);
+}
+.agenda-list li{
+    background:white;
+    padding:14px;
+    border-radius:var(--radius);
+    margin-bottom:8px;
+    box-shadow:var(--shadow);
+    color:var(--brown);
+    list-style:none;
+}
+
+/* FOOTER */
+.footer{
+    background:var(--green);
+    padding:24px 0;
+    margin-top:50px;
+}
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+.footer-links a{
+    margin-left:16px;
+    color:white;
+    font-weight:600;
+}
