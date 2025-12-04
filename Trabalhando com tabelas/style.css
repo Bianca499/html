@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    background: #ddd;
+}
+
+/* ============================
+   TABELA 3 – HORÁRIOS SENAI
+=============================== */
+.horarios th {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.horarios td {
+    text-align: center;
+}
+
+/* ============================
+   TABELA 4 – NOTAS
+=============================== */
+.notas th {
+    background: green;
+    color: white;
+}
+
+.reprovado {
+    background: #ffb3b3;
+    color: red;
+    font-weight: bold;
+}
